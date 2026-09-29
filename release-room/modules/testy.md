@@ -1,5 +1,5 @@
 # Moduł testy
 
-Odpowiedzialny: NIEPRZYDZIELONY
-Stan: NIEGOTOWY
-Opis zmiany: BRAK
+Odpowiedzialny: ziuteczek
+Stan: GOTOWY
+Opis zmiany: Sprawdzono podstawowe scenariusze wydania.
