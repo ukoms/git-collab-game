@@ -1,5 +1,5 @@
 # Moduł logiki
 
-Odpowiedzialny: FilipJaz
+Odpowiedzialny: filipjaz
 Stan: 	GOTOWY
-Opis zmiany: dodano walidację danych wejściowych
+Opis zmiany: dodano walidację danych wejściowych rozszerzona wersja(zupa w plecaku)
