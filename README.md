@@ -93,3 +93,75 @@ by finalnie:
 git pull --ff-only
 git log --oneline -5
 ```
+
+
+## RUNDA 2: PRACA RÓWNOLEGŁA, NA BRANCHACH
+
+Wszyscy zaczynają od identycznego stanu na głównym branchu:
+
+```
+git checkout main
+git pull --ff-only
+```
+
+### 1. WSZYSCY
+
+Każda z osób w zespole tworzy brancha (lokalnie, u siebie) o unikalnej nazwie, według schematu:
+
+```
+git checkout -b feature/interfejs-loginOsobyNaGithub
+```
+
+### 2. OSOBA A:
+
+Edytuje plik: `release-room/modules/interfejs.md`, a następnie:
+
+```
+git add release-room/modules/interfejs.md
+git commit -m "Przygotuj moduł interfejsu"
+git push -u origin feature/interfejs-loginOsobyANaGithub
+```
+
+### 3. OSOBA B:
+
+Dodaje bardziej szczegółową informację do modułu logiki: `release-room/modules/logika.md`, a następnie:
+
+```
+git add release-room/modules/logika.md
+git commit -m "Uzupełnij opis walidacji"
+git push -u origin feature/logika-loginOsobyBNaGithub
+```
+
+### 4. OSOBA C:
+
+Dodaje wyniki testów `release-room/modules/testy.md`, a następnie:
+
+```
+git add release-room/modules/testy.md
+git commit -m "Uzupełnij wyniki testów"
+git push -u origin feature/testy-loginOsobyCNaGithub
+```
+
+### 5. INTEGRACJA BRANCHY
+
+OSOBA A - Release Manager - przechodzi na branch `main`:
+
+```
+git checkout main
+git pull --ff-only
+```
+
+Następnie pobiera i integruje branche od wszystkich członków zespołu:
+
+```
+git pull --no-rebase --no-edit origin feature/interfejs-loginOsobyANaGithub
+git pull --no-rebase --no-edit origin feature/logika-loginOsobyBNaGithub
+git pull --no-rebase --no-edit origin feature/testy-loginOsobyCNaGithub
+```
+
+By finalnie wypchnąć zintegrowany branch `main`
+
+```
+git push origin main
+```
+
