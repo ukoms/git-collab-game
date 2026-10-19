@@ -1,5 +1,5 @@
 # Moduł testy
 
-Odpowiedzialny: NIEPRZYDZIELONY
-Stan: NIEGOTOWY
-Opis zmiany: BRAK
+Odpowiedzialny: Krystian010
+Stan: GOTOWY
+Opis zmiany: Sprawdzono podstawowe scenariusze wydania faza 2 edytowana
