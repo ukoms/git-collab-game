@@ -1,5 +1,5 @@
 # Moduł logika
 
 Odpowiedzialny: yuuriison
-Stan: GOTOWY
-Opis zmiany: Dodano walidację danych wejściowych.
+Stan: BARDZIEJ GOTOWY
+Opis zmiany: Dodano walidację danych wejściowych. Znowu.
