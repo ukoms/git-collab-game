@@ -1,5 +1,5 @@
 # Moduł testy
 
 Odpowiedzialny: yuuriison
-Stan: GOTOWY
-Opis zmiany: Sprawdzono podstawowe scenariusze wydania.
+Stan: bardziej GOTOWY
+Opis zmiany: Sprawdzono podstawowe scenariusze wydania. są git majonez
